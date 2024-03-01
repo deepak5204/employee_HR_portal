@@ -1,88 +1,99 @@
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee portal</title>
   </head>
 
   <body>
-    <nav>
-      <header>
-        <h2>Welcome in company HR portal</h2>
+    <header>
+      <h2>Welcome in company HR portal</h2>
 
-        <ol>
-          <li><a href="employee-registration">Employee Registration</a></li>
-          <li><a href="employee-directory">Employee Directory</a></li>
-          <li><a href="contact-us">Contact Us</a></li>
-        </ol>
-       </header>
-    </nav>
+      <nav>
+        <ul>
+          <li><a href="#employee-registration">Employee Registration</a></li>
+          <li><a href="#employee-directory">Employee Directory</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section id="employee-registration">
-        <h2>Employee Registration</h2>
-        <p>Fill the below form to register as employee</p>
-        <form action="">
+    <img
+      src="/image/pexels-photo-7034393.webp "
+      width="100%"
+      height="400px"
+      alt=""
+    />
 
+    <section id="#employee-registration">
+      <h2>Employee Registration</h2>
+      <p>Fill the below form to register as employee</p>
+      <form action="">
         <label for="name">Name: </label>
-        <input type="text" placeholder="Enter name">
-        <br>
+        <input type="text" placeholder="Enter name" />
+        <br />
 
         <label for="email">Email: </label>
-        <input type="email" placeholder="Enter email">
-        <br>
+        <input type="email" placeholder="Enter email" />
+        <br />
 
         <label for="password">Password: </label>
-        <input type="password" placeholder="Enter password">
-        <br>
+        <input type="password" placeholder="Enter password" />
+        <br />
 
         <label for="age">Age: </label>
-        <input type="number" placeholder="Enter age">
-        <br>
+        <input type="number" placeholder="Enter age" />
+        <br />
 
         <label for="role">Select Role: </label>
         <select name="role" id="role">
-            <option value="se">Software Engineer</option>
-            <option value="pm">Product Manager</option>
-            <option value="tester">Tester</option>
-            <option value="designer">Designer</option>
+          <option value="se">Software Engineer</option>
+          <option value="pm">Product Manager</option>
+          <option value="tester">Tester</option>
+          <option value="designer">Designer</option>
         </select>
 
-        <input type="submit">
-        </form>
+        <input type="submit" />
+      </form>
     </section>
 
     <section id="employee-directory">
-        <h2>Employee Directory</h2>
+      <h2>Employee Directory</h2>
 
-        <p>List of all registered employee.</p>
+      <p>List of all registered employee.</p>
 
-        <table>
-            <tr>
-                <th>Employee Id</th>
-                <th>Employee Name</th>
-                <th>Employee Role</th>
-            </tr>
+      <table>
+        <tr>
+          <th>Employee Id</th>
+          <th>Employee Name</th>
+          <th>Employee Role</th>
+        </tr>
 
-            <tr>
-                <td>2203</td>
-                <td>Jany parker</td>
-                <td>Designer</td>
-            </tr>
-            <tr>
-                <td>2217</td>
-                <td>Jack</td>
-                <td>Product Manager</td>
-            </tr>
-            <tr>
-                <td>2309</td>
-                <td>harry</td>
-                <td>Software Engineer</td>
-            </tr>
-        </table>
+        <tr>
+          <td>2203</td>
+          <td>Jany parker</td>
+          <td>Designer</td>
+        </tr>
+        <tr>
+          <td>2217</td>
+          <td>Jack</td>
+          <td>Product Manager</td>
+        </tr>
+        <tr>
+          <td>2309</td>
+          <td>harry</td>
+          <td>Software Engineer</td>
+        </tr>
+      </table>
     </section>
 
     <section id="contact-us">
-        <h2>Contact Us</h2>
-        <p>You can contact us office@gmail.com or visit: 9AM - 6PM</p>
+      <h2>Contact Us</h2>
+      <p>You can contact us office@gmail.com or visit: 9AM - 6PM</p>
     </section>
   </body>
 </html>
