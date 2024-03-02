@@ -7,6 +7,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee portal</title>
+    <link rel="icon" href="/image//icons8-company-48.png">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: hsl(0, 0%, 90%);
+            transition: background-color 300ms;
+        }
+
+        header, footer{
+            text-align: center;
+            padding: 5px;
+            color: aliceblue;
+            background-color: #959b9e;
+        }
+
+        .navitem{
+            display: inline;
+            padding: 10px;
+        }
+        
+        .navitem a {
+            text-decoration: none;
+            color: rgb(255, 251, 251);
+        }
+
+        .registerForm{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .employeeDirectory{
+            text-align: center;;
+        }
+
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, tr, th{
+            border: 1px solid black
+        }
+
+        .contactus{
+            text-align: center;
+        }
+
+    </style>
   </head>
 
   <body>
@@ -15,9 +69,9 @@
 
       <nav>
         <ul>
-          <li><a href="#employee-registration">Employee Registration</a></li>
-          <li><a href="#employee-directory">Employee Directory</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
+          <li class="navitem"><a href="#employee-registration">Employee Registration</a></li>
+          <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+          <li class="navitem"><a href="#contact-us">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -29,25 +83,25 @@
       alt=""
     />
 
-    <section id="#employee-registration">
+    <section id="#employee-registration" class="registerForm">
       <h2>Employee Registration</h2>
       <p>Fill the below form to register as employee</p>
       <form action="">
         <label for="name">Name: </label>
         <input type="text" placeholder="Enter name" />
-        <br />
+        <br /> <br>
 
         <label for="email">Email: </label>
         <input type="email" placeholder="Enter email" />
-        <br />
+        <br /> <br>
 
         <label for="password">Password: </label>
         <input type="password" placeholder="Enter password" />
-        <br />
+        <br /> <br>
 
         <label for="age">Age: </label>
         <input type="number" placeholder="Enter age" />
-        <br />
+        <br /> <br>
 
         <label for="role">Select Role: </label>
         <select name="role" id="role">
@@ -56,12 +110,13 @@
           <option value="tester">Tester</option>
           <option value="designer">Designer</option>
         </select>
+        <br> <br>
 
         <input type="submit" />
       </form>
     </section>
 
-    <section id="employee-directory">
+    <section id="employee-directory" class="employeeDirectory">
       <h2>Employee Directory</h2>
 
       <p>List of all registered employee.</p>
@@ -91,9 +146,13 @@
       </table>
     </section>
 
-    <section id="contact-us">
+    <section id="contact-us" class="contactus">
       <h2>Contact Us</h2>
       <p>You can contact us office@gmail.com or visit: 9AM - 6PM</p>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Company pvt ltd</p>
+    </footer>
   </body>
 </html>
